@@ -1,17 +1,26 @@
 <app-navbar></app-navbar>
-<div class="card p-3 mt-3">
-</div>
-<div class="flex-row space-between">
+<!-- seccion sobre mí -->
+<div class="flex-container">
   <div class="col-md-4">
     <img src="../assets/Jinbe_Manga_Infobox.webp" alt="" width="300px" height="300px" style="border-radius: 150px;">
   </div>
-  <div class="col-md-8">
+  <div class="col-md-8 space-between">
     <div class="row">
         <p class="titles">Sobre mí:</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi nihil dignissimos ipsa odit voluptas quod in expedita placeat saepe enim ex unde, animi a aperiam cumque architecto, modi quasi.</p>
     </div>
   </div>
 </div>
-<!-- <div style="display: flex; margin-top: 0%;">
-  <app-card style="margin-right: 10px; margin-top: 10px;"></app-card>
-</div> -->
+<!-- seccion tecnologias -->
+<div class="flex-container">
+  <div class="col-md-12">
+    <p class="titles">Mis habilidades:</p>
+  </div>
+</div>
+<div class="flex-container">
+  <div class="col-4">
+    <ng-container *ngFor="let item of content">
+        <app-card [content]="item"></app-card>
+    </ng-container>
+  </div>
+</div>

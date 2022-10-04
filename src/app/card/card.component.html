@@ -1,4 +1,4 @@
-<p-card header="Formación académica" [style]="{'width': '25rem', 'margin-bottom': '2em', 'background-color': 'rgba(215,215,215,0.1)',
+<p-card [header]="content.header" [style]="{'width': '25rem', 'margin-bottom': '2em', 'background-color': 'rgba(215,215,215,0.1)',
 'background-image': 'linear-gradient(45deg, rgba(255,255,255,0), rgba(255,255,255,0.5))'
 , 'text-align': 'center'}" styleClass="p-card-shadow">
   <ng-template pTemplate="header">
@@ -7,6 +7,5 @@
 
     <img src="https://ubiobio.cl/w/img/Escudo-UBB.svg" alt="UBB" style="height: 100px; width: 100px;">
   <p style="margin-top: 0px;"><i>[2019-2022]</i></p>
-  <p style="text-align: left;"><strong>Ingeniería de ejecución en computación e informática</strong>: egresado el primer semestre del 2022</p>
+  <p style="text-align: left;"><strong>{{content.text}}</strong>: egresado el primer semestre del 2022</p>
 </p-card>
- 

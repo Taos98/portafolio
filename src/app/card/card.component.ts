@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {CardModule} from 'primeng/card';
 
 @Component({
@@ -7,11 +7,12 @@ import {CardModule} from 'primeng/card';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-
+@Input() content: any = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.content)
   }
 
 }
