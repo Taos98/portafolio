@@ -2,10 +2,10 @@
 'background-image': 'linear-gradient(45deg, rgba(255,255,255,0), rgba(255,255,255,0.5))'
 , 'text-align': 'center'}" styleClass="p-card-shadow">
   <ng-template pTemplate="header">
-      <img alt="Card" src="https://www.primefaces.org/primeng/assets/showcase/images/usercard.png">
+      <img alt="Card" src="{{content.image}}" style="{{content.ImageStyle}}">
   </ng-template>
-
-    <img src="https://ubiobio.cl/w/img/Escudo-UBB.svg" alt="UBB" style="height: 100px; width: 100px;">
-  <p style="margin-top: 0px;"><i>[2019-2022]</i></p>
-  <p style="text-align: left;"><strong>{{content.text}}</strong>: egresado el primer semestre del 2022</p>
+  <ng-template pTemplate="body">
+    <p style="margin-top: 0px;"><i>{{content.subHeader}}</i></p>
+    <p style="text-align: left;"><strong>{{content.text}}: </strong>{{content.info}} </p>
+  </ng-template>
 </p-card>
